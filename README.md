@@ -49,6 +49,14 @@ git remote add origin https://github.com/yourusername/your-repo.git
 git push -u origin main
 ``` 
 
+## ✅ W3C Validation
+
+The project has been validated using the W3C validators to ensure proper HTML and CSS standards:
+
+- **HTML Validator:** [Validate HTML](https://validator.w3.org/nu/?doc=https://celesteag.github.io/RobEurope/)
+- **CSS Validator:** [Validate CSS](https://jigsaw.w3.org/css-validator/validator?uri=https://celesteag.github.io/RobEurope/style.css)
+
+
 🙌 Acknowledgment
 Special thanks to the following resources for guidance and inspiration throughout development:
 

@@ -32,7 +32,7 @@
 
 .nav a:active,
 .nav a:focus {
-    background-color: #093e4e;
+    background-color: #071c69;
     color: black;
     text-decoration: underline;
 }
@@ -123,6 +123,24 @@
     color: rgb(64, 73, 194);
     transition: color 0.3s ease, text-shadow 0.5s ease;
     transform: scale(1.1);
+}
+
+.footer-item,
+.footer-item-contact,
+.footer-item.validator {
+  margin: 10px 0;
+}
+
+.footer-item-contact a,
+.footer-item.validator a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.footer-item.validator img {
+  margin: 5px;
+  border: none;
+  vertical-align: middle;
 }
 
 .icon-link a {
@@ -246,7 +264,7 @@
     }
 }
 
-@media (max-width: 600) {
+@media (max-width: 600px) {
 
     .main {
         display: flex;
