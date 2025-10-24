@@ -7,15 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script>
-        function toggleInfo(card) {
-            card.classList.toggle('active'); //Propiedad que tienen las clases CSS
-
-            setTimeout(() => {
-                card.classList.remove('active'); //Quitamos la clase automáticamente
-            }, 2000);
-        }
-    </script>
 </head>
 
 <body>
@@ -108,11 +99,11 @@
             </div>
         </div>
         <div class="footer">
-            <div class="footer-item">Términos y condiciones</div>
-            <div class="footer-item">Política de privacidad</div>
-            <div class="footer-item">&copy; 2025 MiSitio. Todos los derechos reservados.</div>
+            <div class="footer-item">Terms and conditions</div>
+            <div class="footer-item">Privacy policy</div>
+            <div class="footer-item">&copy; 2025 MySite. All rights reserved.</div>
             <div class="footer-item-contact">
-                Contacta con nosotros: <br>
+                Contact with us: <br>
                 <span class="icon-link">
                     <i class="bi bi-envelope-fill"></i>
                     <a href="mailto:info@robeurope.com">info@robeurope.com</a>
@@ -133,6 +124,8 @@
             </div>
         </div>
     </div>
+
+    <script src="js/toogle-info.js"></script>
 </body>
 
 </html>

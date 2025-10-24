@@ -1,24 +1,22 @@
-/* Contenedor principal de las cards */
+/* Main container */
 .container {
   width: 90%;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  /* empieza en columna */
   align-items: center;
-  /* centra horizontalmente */
+  /* centre horizontally */
   gap: 30px;
   padding: 20px;
   margin: 0 70px auto;
-  /*Arriba, izq/dere, abajo */
+  /*Up, left-right, down */
   min-height: 100vh;
-  /* ocupa toda la altura de la pantalla */
+  /* the entire height of the screen */
   justify-content: center;
-  /* centra verticalmente */
+  /* centre vertically */
 
 }
 
-/* Cada card tipo bloque de texto */
 .container .card {
   background: #ffffff;
   border-radius: 15px;
@@ -29,15 +27,15 @@
   display: flex;
   flex-direction: column;
   width: 300px;
-  /* ancho fijo */
+  /* fixed width */
   min-height: auto;
-  /* que la altura se adapte */
+  /* the height is suitable */
   aspect-ratio: auto;
-  /* quitar restricción de tamaño ancho y alto */
+  /* remove width and height restrictions*/
   padding: 25px 25px;
-  /*arriba/abajo*/
+  /* content space at top/bottom edge */
   box-sizing: border-box;
-  /*incluimos padding en tamaño*/
+  /* padding included in size*/
   gap: 10px;
   transition: all 0.3s ease;
   line-height: 1.6;
@@ -45,7 +43,7 @@
 
 
 
-/* Efecto hover */
+/* Hover efect */
 .container .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -58,7 +56,7 @@
   text-align: center;
 }
 
-/* Títulos */
+/* Title */
 .container .card h3 {
   color: #1e1e6a;
   margin-top: 0;
@@ -66,14 +64,14 @@
   margin-bottom: 15px;
 }
 
-/* Texto */
+/* Text */
 .container .card p,
 .container .card li {
   color: #222;
   font-size: 16px;
 }
 
-/* Enlaces */
+/* Links */
 .container .card a {
   color: #1e4eff;
   text-decoration: none;
@@ -92,17 +90,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch; /* hace que las cards tengan misma altura */
+    align-items: stretch;
+    /* the cards are the same height */
   }
 
   .container .card {
     flex: 1 1 45%;
     max-width: 300px;
     min-height: 350px;
-    /* altura fija mínima para uniformidad */
+    /* minimum fixed height */
   }
 
-  /* Opcional: primera card más ancha y centrada */
+  /* First card wider and centred */
   .card:first-of-type {
     flex: 0 0 600px;
     max-width: 600px;
@@ -110,15 +109,15 @@
   }
 }
 
-/* 🔸 A partir de pantallas grandes (ej. laptops y más) */
+/* From large screens */
 @media (min-width: 992px) {
   .container {
     flex-direction: row;
-    /* cambia a filas */
+    /* direction in line */
     flex-wrap: wrap;
-    /* permite que bajen si no caben */
+    /* allow them to get off if they don't fit */
     justify-content: center;
-    /* centra horizontalmente */
+    /* centre horizontally */
     align-items: flex-start;
     max-width: 1200px;
     margin: 50px auto;
@@ -126,16 +125,20 @@
 
   .container .card {
     flex: 1 1 30%;
-    /* tres cards por fila aprox */
+    /* three cards per row */
     min-width: 280px;
     max-width: 350px;
     height: 400px;
   }
 
-  .container .card > p, .conatiner .card > li {
-  overflow-y: auto; /* scroll vertical */
-  flex-grow: 1; /* que el contenido crezca para ocupar el espacio */
-  margin: 0; /* elimina márgenes para que quede bien ajustado */
-}
+  .container .card>p,
+  .conatiner .card>li {
+    overflow-y: auto;
+    /* scroll vertical */
+    flex-grow: 1;
+    /* the content expands to fill the space */
+    margin: 0;
+    /* remove margins so that it fits well */
+  }
 
 }
