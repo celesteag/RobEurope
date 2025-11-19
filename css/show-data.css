@@ -27,6 +27,7 @@ body {
 .nav a {
   color: white;
   padding: 10px;
+  font-size: medium;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: block;
   text-align: center;
@@ -51,12 +52,14 @@ h1 {
 
 .container-show-alldata {
   display: flex;
+  flex: 1;
   flex-direction: column;
   padding: 20px;
   text-align: center;
   box-sizing: border-box;
   margin-left: 210px;
   width: calc(100% - 250px);
+  min-height: 80rem;
 }
 
 #container-show-data {
@@ -118,6 +121,7 @@ h1 {
 .footer-item-contact,
 .footer-item.validator {
   margin: 10px 0;
+  font-size: medium;
 }
 
 .footer-item-contact a,
